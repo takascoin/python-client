@@ -1,6 +1,8 @@
+from email.utils import parseaddr
 import hashlib
 import hmac
 import json
+import re
 import sys
 
 try:
@@ -145,4 +147,4 @@ class Takascoin:
         return {'success': False, 'message': message}
 
     def validEmail(self, email):
-        return True
+        return len(email) > 3 and bool(re.match(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)", email))
