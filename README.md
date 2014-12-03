@@ -37,11 +37,11 @@ print(payment)
 ```
 
 ###List of all commands:
-- payment($amount, $currency, $address, $options);                - creates payment
-- button($amount, $currency, $address, $options);                 - prepares a button template
-- validateNotification($hash, $orderID, $invoiceID, $secret);     - checks if incoming payment notification is valid.
-- status($invoiceID);                                             - current status of invoice [new,approved,confirmed,completed,cancelled]
-- invoice($invoiceID);                                            - get latest invoice object
+- payment(amount, apiKey, options);                           - creates payment
+- button(amount, apiKey, options);                            - prepares a button template
+- validateNotification(hash, orderID, invoiceID, secret);     - checks if incoming payment notification is valid.
+- status(invoiceID);                                          - current status of invoice [new,approved,confirmed,completed,cancelled]
+- invoice(invoiceID);                                         - get latest invoice object
 
 
 Your feedback and suggestions are very much welcome. Please contact info@takascoin.com for any input. 
