@@ -1,7 +1,7 @@
+import hashlib
 import hmac
-from django.core.serializers import json
+import json
 import sys
-from setuptools._backport import hashlib
 
 try:
     import urllib2
