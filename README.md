@@ -21,12 +21,12 @@ takascoin = Takascoin()
 amount   = 0.012
 apiKey   = "Takas merchant email"
 options = {
-    'currency'    : 'TRY', // OR 'BTC'
+    'currency'    : 'TRY', # OR 'BTC'
     'item'        : 'T-shirt',
     'description' : '100% cotton natural T-shirt'
 }
 
-payment = takascoin.payment(amount, apiKey)
+payment = takascoin.payment(amount, apiKey, options)
 
 print(payment)
 
